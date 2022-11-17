@@ -1,0 +1,91 @@
+body {
+    background: #aacbe9; 
+
+}
+
+h3 {
+    text-align: center;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    background-color: #c8f4ff;
+    border-radius: 18px;
+    border-width: 3px;
+    border-style: solid;
+    
+    width: 50%;
+    margin: 0 auto;
+    padding: 25px;  
+    height: 70%;
+    border-color: lightslategray;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.div1 {
+
+    padding: 10px;
+    border-radius: 14px;
+    margin-bottom: 20px;
+    background-color:darkseagreen;
+}
+
+#bill_amount {
+    background-color: whitesmoke;
+    border-color:lightslategray;
+    border-width: 0.2px;
+    border-radius: 30px;
+    border-width: 2px;
+    padding: 5px;
+    
+}
+
+#addTip {
+    border-radius: 30px;
+    border-width: 2px;
+    border-color: lightslategray;
+    background-color: whitesmoke;
+    padding: 5px;
+    text-align: center;
+
+}
+
+#people {
+    border-radius: 30px;
+    border-width: 2px;
+    border-color: lightslategray;
+    background-color: whitesmoke;
+    padding: 5px;
+
+}
+
+form {
+    margin-bottom: 20px;
+    border-radius: 16px;
+}
+
+button {
+    padding: 5px;
+    border-radius: 30px;
+    background-color:cornflowerblue;
+    border-color: whitesmoke;
+    margin: 10px;
+    text-align: center;
+
+}
+
+.div2 {
+    padding: 10px;
+    border-radius: 14px;
+    margin-bottom: 20px;
+    background-color:darkcyan;
+    color: whitesmoke;
+}
+
+
+

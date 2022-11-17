@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <h3>TIP CALCULATOR</h3>
+
+    <div class="container">
+        <div class="div1">
+            <p>Enter total bill</p>
+            <p>$ <input type="text" id="bill_amount" placeholder="" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"> </p>   
+
+            <select id="addTip"> 
+                <option>Choose Your Tip</option>
+                <option value="0.0">No Tip - Poor</option>
+                <option value="0.15">15% - Average</option>
+                <option value="0.2">20% - Good</option>       
+                <option value="0.25">25% - Excellent</option>               
+            </select></h3>
+
+            <p>Split Bill:
+                <input type="text" id="people" placeholder="Number of People" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
+            </p>
+
+            <button id="calculate" onclick="">Calculate Tip</button>
+
+        </div>
+
+        <div class="div2">
+            <p>Tip Amount
+                <p id="tip">$ 0.00 / Person</p>
+            </p>
+            <p>Total Amount
+                <p id="total">$ 0.00 / Person</p>
+            </p>
+
+        </div>
+    </div>
+
+   <script src="script.js"></script> 
+</body>
+</html>
