@@ -13,8 +13,9 @@
 
     <div class="container">
         <div class="div1">
-            <p>Enter total bill</p>
-            <p>$ <input type="text" id="bill_amount" placeholder="" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"> </p>   
+            
+            <p>ENTER TOTAL BILL</p>
+            <p>$ <input type="number" id="bill_amount" placeholder="$"> </p>   
 
             <select id="addTip"> 
                 <option>Choose Your Tip</option>
@@ -24,24 +25,26 @@
                 <option value="0.25">25% - Excellent</option>               
             </select></h3>
 
-            <p>Split Bill:
-                <input type="text" id="people" placeholder="Number of People" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
+            <p id="split-bill">Split Bill:<br>
+                <input type="number" id="people" placeholder="Number of People" >
             </p>
 
-            <button id="calculate" onclick="">Calculate Tip</button>
-
+            <button id="calculate" onclick="">CALCULATE TIP</button>
+        
         </div>
 
         <div class="div2">
-            <p>Tip Amount
+            
+            <p>TIP AMOUNT
                 <p id="tip">$ 0.00 / Person</p>
             </p>
-            <p>Total Amount
+            <p>TOTAL AMOUNT
                 <p id="total">$ 0.00 / Person</p>
             </p>
-
-        </div>
+        
+        </div>        
     </div>
+    <footer>Made With &#9829; By Ploynapas Masi</footer>
 
    <script src="script.js"></script> 
 </body>

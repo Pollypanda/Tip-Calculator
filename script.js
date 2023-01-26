@@ -6,9 +6,9 @@ function calculate_tip() {
     const addTip = document.getElementById("addTip").value;
     const num_people = document.getElementById("people").value;
     
-    if(bill_amount === "" || num_people === "" || addTip === "Choose Your Tip"){
-        alert("Invaid input!");
-    }
+    if(bill_amount === "" || bill_amount <= 0 || num_people === "" || num_people <= 0 || addTip === "Choose Your Tip" || bill_amount == 0){
+         alert("Invalid input! Please try again.");
+    }else{
     const totalTipPerPerson = ((bill_amount * addTip)/num_people).toFixed(2);
 
     const totalAmountPerPerson = (parseFloat(bill_amount/num_people) + parseFloat(totalTipPerPerson)).toFixed(2);
@@ -17,7 +17,8 @@ function calculate_tip() {
     document.getElementById("tip").innerHTML = `$ ${totalTipPerPerson} / Person`;
     document.getElementById("total").innerHTML = `$ ${totalAmountPerPerson} / Person`;
 
-    
+    }
+
   }
 
 calculate.addEventListener("click", calculate_tip);
